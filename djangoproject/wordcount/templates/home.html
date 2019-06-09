@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+    <h1>안녕하세요 여기에 글자를 넣어주세요</h1>
+    
+    <a href="{% url 'about' %}">ABOUT</a>
+    <form action="{% url 'result' %}">
+        <textarea name="fulltext" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Count!">
+    </form>
+
+{% endblock %}
